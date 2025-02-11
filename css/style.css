@@ -63,6 +63,7 @@ h6 {
   --header-bg: #090f0b;
   --white-text: rgb(255, 255, 255);
   --green-bg: #4fc47e;
+  --menu: #000;
 }
 html {
   height: 100%;
@@ -90,6 +91,7 @@ header {
   align-items: center;
   max-width: 67.5rem;
   padding-block: 0.8rem;
+  padding-inline: 2rem; /* 32px */
 }
 
 .header-links {
@@ -122,6 +124,10 @@ header {
   display: none;
 }
 
+.mobile-menu-btn {
+  cursor: pointer;
+}
+
 .mobile-hidden {
   display: block;
 
@@ -129,7 +135,43 @@ header {
     max-height: 28px;
   }
 }
+#mobile-popover {
+  border: 0;
+  padding: 0;
+  width: 100%;
+  & > .mobile-menu-header {
+    padding-block: 0.8rem;
+    padding-inline: 2rem; /* 32px */
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
 
+    & > a {
+      height: 37px;
+    }
+  }
+
+  & .header-links {
+    background-color: #090f0b;
+    & > ul {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      & > li {
+        width: 100%;
+        /* flex: 1; */
+        padding-block: 1rem;
+        padding-inline: 2rem; /* 32px */
+        &:hover {
+          background-color: #222;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
 @media (min-width: 48rem) {
   .hidden {
     display: flex;

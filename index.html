@@ -32,9 +32,37 @@
           </ul>
         </nav>
         <nav class="mobile-hidden">
-          <button class="mobile-menu-btn">
+          <button class="mobile-menu-btn" popovertarget="mobile-popover" popovertargetaction="show">
             <img src="./assets/hamburger.png" alt="menu" />
           </button>
+          <div id="mobile-popover" popover>
+            <div class="mobile-menu-header">
+                <a href="https://tradescoop.io">
+                    <img
+                    src="/assets/logo.svg"
+                    alt="two bags of money in an ice cream container" />
+                </a>
+                <button class="mobile-menu-btn" popovertarget="mobile-popover" popovertargetaction="hide">
+                    <img src="./assets/cancel.png" alt="close" />
+                </button>
+            </div>
+                <nav class="header-links poppins-regular">
+                    <ul>
+                        <li>
+                            <a href="https://tradescoop.io/how-it-works">How it works</a>
+                        </li>
+                        <li><a href="https://tradescoop.io/ideas">Trading Ideas</a></li>
+                        <li><a href="https://tradescoop.io/ideas">Premium</a></li>
+                        <li><a href="https://tradescoop-blog.netlify.app/">Blog</a></li>
+                        <li>
+                            <a href="https://tradescoop.io/login">Login</a>
+                        </li>
+                        <li>
+                            <a href="https://tradescoop.io/premium">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+          </nav>
         </nav>
       </div>
     </header>
