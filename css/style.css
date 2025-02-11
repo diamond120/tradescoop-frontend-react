@@ -91,6 +91,7 @@ header {
 }
 
 main {
+  margin-block-start: 2rem;
   margin-inline: 2.25rem; /* 36px */
   display: flex;
   flex-direction: column;
@@ -148,8 +149,9 @@ main {
     grid-column: 1 / -1;
     height: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: hsl(from var(--header-bg) h s l / 0.5);
     & > .hero-title {
       /* grid-row: 1;
