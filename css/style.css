@@ -47,3 +47,29 @@ h6 {
   overflow-wrap: break-word;
 }
 /* css reset end */
+
+:root {
+  --header-bg: #090f0b;
+}
+html {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 90rem;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: max-content;
+  transition: all 1s ease;
+}
+
+header {
+  background-color: var(--header-bg);
+}
+
+.header-cont {
+  /* margin-inline: auto; */
+  display: flex;
+  justify-content: center;
+  max-width: 67.5rem;
+}
