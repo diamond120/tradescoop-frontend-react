@@ -89,6 +89,7 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 67.5rem;
+  padding-block: 0.8rem;
 }
 
 .header-links {
@@ -114,5 +115,27 @@ header {
       background-color: var(--green-bg);
       border-radius: 0.25rem; /*  4px */
     }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-hidden {
+  display: block;
+
+  & img {
+    max-height: 28px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .hidden {
+    display: flex;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 }
