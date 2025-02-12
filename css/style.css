@@ -138,8 +138,7 @@ header {
   top: 0;
 }
 
-main,
-.blog-post-sections {
+main {
   margin-block-start: 2rem;
   margin-inline: 2.25rem; /* 36px */
   display: flex;
@@ -157,6 +156,9 @@ main,
   }
 }
 .blog-post-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
 
   & .blog-main-img {
@@ -552,8 +554,7 @@ ul {
       gap: 0;
     }
   }
-  main,
-  .blog-post-sections {
+  main {
     margin-inline: clamp(
       2.25rem,
       calc(-5.893rem + 16.964vw),
