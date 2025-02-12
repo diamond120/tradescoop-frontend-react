@@ -215,6 +215,11 @@ main,
     max-width: 3rem;
   }
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 .comment-form {
   display: grid;
   gap: 1.25rem;
