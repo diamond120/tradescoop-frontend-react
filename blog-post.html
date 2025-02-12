@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/blog-post-script.js"></script>
     <title>Tradescoop</title>
   </head>
   <body>
@@ -167,6 +168,7 @@
             <label>
               <span class="text-gray-700">Name</span>
               <input
+                required
                 name="name"
                 class="form-input mt-1 block w-full rounded border py-2 px-3 shadow"
                 placeholder="John Appleseed" />
@@ -174,6 +176,7 @@
             <label>
               <span class="text-gray-700">Email</span>
               <input
+                required
                 name="email"
                 type="email"
                 class="form-input mt-1 block w-full rounded border py-2 px-3 shadow"
@@ -182,13 +185,14 @@
             <label>
               <span class="text-gray-700">Comment</span>
               <textarea
+                required
                 name="comment"
                 class="form-textarea mt-1 block w-full rounded border py-2 px-3 shadow"
                 rows="8"
                 placeholder="Enter some long form content."
                 style="height: 163px"></textarea>
             </label>
-            <button class="poppins-semibold">Submit</button>
+            <button data-comment-btn="" class="poppins-semibold">Submit</button>
           </form>
         </section>
         <section class="ad-section">
