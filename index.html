@@ -101,7 +101,7 @@
       <section class="posts-section poppins-regular">
         <h2 class="poppins-semibold more-posts-title">More Posts</h2>
         <div class="posts-cont">
-          <div class="post">
+          <!-- <div class="post">
             <a href="/blog-post.html" class="post-img">
               <img
                 src="assets/options-image.avif"
@@ -186,23 +186,23 @@
                 <div class="date">March 14, 2024</div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="post-page-cont">
           <div class="left-post-arrows">
-            <button disabled="">«</button>
-            <button disabled="">‹</button>
+            <button id="start-btn">«</button>
+            <button id="prev-btn">‹</button>
           </div>
           <div class="page-nums-cont">
-            <span class="current-page-num">1</span>
+            <span data-current-page="" class="current-page-num">1</span>
             <span>
               /
-              <span>2</span>
+              <span data-total-page="">2</span>
             </span>
           </div>
           <div class="right-post-arrows">
-            <button>›</button>
-            <button>»</button>
+            <button id="next-btn">›</button>
+            <button id="end-btn">»</button>
           </div>
         </div>
       </section>

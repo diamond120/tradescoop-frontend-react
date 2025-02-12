@@ -449,6 +449,7 @@ ul {
 
     & .post-title {
       text-decoration: none;
+      color: var(--header-bg);
 
       & h3 {
         font-size: clamp(
