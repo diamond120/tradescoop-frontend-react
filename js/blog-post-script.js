@@ -1,6 +1,18 @@
 import { posts } from "../post.js";
 
 const submitCommentBtn = document.querySelector("[data-comment-btn]");
+const id = new URL(window.location.href).searchParams.get("id");
+const post = posts.find((post) => id == post.id);
+const blogTitle = document.querySelector("[data-blog-title]");
+const blogImg = document.querySelector("[data-blog-img");
+const blogProfileImg = document.querySelector("[data-profile-img]");
+const blogAuthor = document.querySelector("[data-author]");
+const blogDate = document.querySelector("[data-blog-date]");
+blogTitle.textContent = post.title;
+blogImg.setAttribute("src", post.thumbnail);
+blogProfileImg.setAttribute("src", post.profile_pic);
+blogAuthor.textContent = post.author;
+blogDate.textContent = post.date;
 
 submitCommentBtn.addEventListener("click", (e) => {
   e.preventDefault();
