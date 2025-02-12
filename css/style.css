@@ -227,13 +227,24 @@ main,
       resize: vertical;
       text-indent: 0.75rem;
       padding-block: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      outline: 2px solid rgb(229, 231, 235);
+
+      &:focus {
+        outline: 2px solid #007bff;
+      }
     }
     & input {
-      /* outline: gray 1px solid; */
+      border: none;
+      border-radius: 0.25rem;
+      outline: 2px solid rgb(229, 231, 235);
       text-indent: 0.75rem;
       padding-block: 0.5rem;
-      border: 1px solid gray;
       border-radius: 0.25rem;
+      &:focus {
+        outline: 2px solid #007bff;
+      }
     }
   }
 
