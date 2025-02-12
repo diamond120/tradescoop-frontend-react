@@ -329,6 +329,8 @@ ul {
     justify-content: space-evenly;
     background-color: hsl(from var(--header-bg) h s l / 0.5);
     & > .hero-title {
+      text-decoration: none;
+      color: var(--white-text);
       margin-inline: 3rem; /* 48px */
       text-align: center;
       font-size: clamp(
