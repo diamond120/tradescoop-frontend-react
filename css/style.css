@@ -138,7 +138,8 @@ header {
   top: 0;
 }
 
-main {
+main,
+.blog-post-sections {
   margin-block-start: 2rem;
   margin-inline: 2.25rem; /* 36px */
   display: flex;
@@ -535,7 +536,8 @@ main {
       gap: 0;
     }
   }
-  main {
+  main,
+  .blog-post-sections {
     margin-inline: clamp(
       2.25rem,
       calc(-5.893rem + 16.964vw),
@@ -550,7 +552,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
+    z-index: -1;
     & > .ad-text {
       font-size: 1.5rem;
     }
