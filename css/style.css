@@ -156,6 +156,9 @@ main {
   }
 }
 .blog-post-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 4rem;
 
   & .blog-main-img {
@@ -214,6 +217,11 @@ main {
     max-width: 3rem;
   }
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 .comment-form {
   display: grid;
   gap: 1.25rem;
@@ -226,13 +234,24 @@ main {
       resize: vertical;
       text-indent: 0.75rem;
       padding-block: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      outline: 2px solid rgb(229, 231, 235);
+
+      &:focus {
+        outline: 2px solid #007bff;
+      }
     }
     & input {
-      /* outline: gray 1px solid; */
+      border: none;
+      border-radius: 0.25rem;
+      outline: 2px solid rgb(229, 231, 235);
       text-indent: 0.75rem;
       padding-block: 0.5rem;
-      border: 1px solid gray;
       border-radius: 0.25rem;
+      &:focus {
+        outline: 2px solid #007bff;
+      }
     }
   }
 
@@ -310,6 +329,8 @@ main {
     justify-content: space-evenly;
     background-color: hsl(from var(--header-bg) h s l / 0.5);
     & > .hero-title {
+      text-decoration: none;
+      color: var(--white-text);
       margin-inline: 3rem; /* 48px */
       text-align: center;
       font-size: clamp(
@@ -423,11 +444,14 @@ main {
 
   & .post {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     flex-basis: calc(50% - var(--gap));
     max-width: calc(50 - var(--gap));
 
     & .post-title {
       text-decoration: none;
+      color: var(--header-bg);
 
       & h3 {
         font-size: clamp(
@@ -443,6 +467,13 @@ main {
       &:hover {
         text-decoration: underline;
       }
+    }
+    & .post-info {
+      /* height: 100%; */
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   & .post-img {
@@ -550,7 +581,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
+    z-index: -1;
     & > .ad-text {
       font-size: 1.5rem;
     }
