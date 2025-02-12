@@ -147,6 +147,10 @@ main {
   max-width: 90rem;
 }
 
+.blog-post-sections {
+  gap: 4rem;
+}
+
 .header-cont {
   flex: 1;
   display: flex;
@@ -433,6 +437,16 @@ main {
       calc(-5.893rem + 16.964vw),
       9.375rem
     ); /* min: 36px, max: 150px */
+  }
+
+  .ad-section {
+    position: sticky;
+    top: 9.6rem;
+    align-self: flex-start;
+  }
+
+  .blog-post-sections {
+    flex-direction: row;
   }
   .hidden {
     display: flex;
