@@ -65,7 +65,6 @@ nextBtn.addEventListener("click", () => {
     displayPosts();
   }
 });
-console.log(startBtn);
 startBtn.addEventListener("click", () => {
   console.log("here");
   currentPage = 1;
