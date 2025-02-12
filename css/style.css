@@ -263,6 +263,25 @@ main {
     flex-grow: 1;
     flex-basis: calc(50% - var(--gap));
     max-width: calc(50 - var(--gap));
+
+    & .post-title {
+      text-decoration: none;
+
+      & h3 {
+        font-size: clamp(
+          1.25rem,
+          calc(1.011rem + 1.018vw),
+          1.5rem
+        ); /* min: 20px, max: 24px */
+      }
+
+      &:visited {
+        color: var(--header-bg);
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   & .post-img {
     & > img {
@@ -318,6 +337,20 @@ main {
 
         & > .profile.hidden {
           display: flex;
+        }
+      }
+    }
+  }
+
+  .posts-section {
+    & .post {
+      & .post-title {
+        & h3 {
+          font-size: clamp(
+            1.5rem,
+            calc(1.071rem + 0.893vw),
+            1.875rem
+          ); /* min: 24px, max: 30px */
         }
       }
     }
