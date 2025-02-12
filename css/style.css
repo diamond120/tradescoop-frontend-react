@@ -444,6 +444,8 @@ ul {
 
   & .post {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     flex-basis: calc(50% - var(--gap));
     max-width: calc(50 - var(--gap));
 
@@ -465,6 +467,13 @@ ul {
       &:hover {
         text-decoration: underline;
       }
+    }
+    & .post-info {
+      /* height: 100%; */
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   & .post-img {
