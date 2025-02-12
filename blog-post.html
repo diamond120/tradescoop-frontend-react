@@ -93,7 +93,7 @@
             <div class="date">March 14, 2024</div>
           </div>
         </div>
-        <article class="">
+        <article class="blog-paras">
           <p>
             In addition to trend analysis techniques, investors and day traders
             can benefit from integrating fundamental analysis. This method
@@ -112,7 +112,9 @@
             projections. This approach provides a more complete market overview
             and reveals investment opportunities.
           </p>
-          <h3>Key Financial Ratios for Fundamental Analysis</h3>
+          <h3 class="poppins-regular">
+            Key Financial Ratios for Fundamental Analysis
+          </h3>
           <p>
             Financial ratios are vital in fundamental analysis. They help
             investors evaluate company performance and stock valuation.
@@ -138,7 +140,7 @@
             These ratios form the basis for solid investment analysis and
             informed investment decisions.
           </p>
-          <h3>Challenges and Considerations</h3>
+          <h3 class="poppins-regular">Challenges and Considerations</h3>
           <p>
             Fundamental analysis has drawbacks. It is time-consuming, often
             requiring a deep dive into financial data and economic indicators.
@@ -154,23 +156,21 @@
           </p>
         </article>
 
-        <h2 class="mt-32 mb-4 ft-bold text-4xl leading-tight lg:text-6xl">
-          Comments:
-        </h2>
-        <ul></ul>
-        <form class="w-full max-w-lg mt-8" disabled="">
+        <h2 class="comments-header">Comments:</h2>
+        <!-- <ul></ul> -->
+        <form class="comment-form" disabled="">
           <input
             name="_id"
             type="hidden"
             value="fbcff311-9e17-4539-b16f-28ff258b354e" />
-          <label class="mb-5 block">
+          <label>
             <span class="text-gray-700">Name</span>
             <input
               name="name"
               class="form-input mt-1 block w-full rounded border py-2 px-3 shadow"
               placeholder="John Appleseed" />
           </label>
-          <label class="mb-5 block">
+          <label>
             <span class="text-gray-700">Email</span>
             <input
               name="email"
@@ -178,7 +178,7 @@
               class="form-input mt-1 block w-full rounded border py-2 px-3 shadow"
               placeholder="your@email.com" />
           </label>
-          <label class="mb-5 block">
+          <label>
             <span class="text-gray-700">Comment</span>
             <textarea
               name="comment"
@@ -187,9 +187,7 @@
               placeholder="Enter some long form content."
               style="height: 163px"></textarea>
           </label>
-          <input
-            type="submit"
-            class="focus:shadow-outline rounded bg-green-500 py-3 px-6 ft-bold text-white shadow hover:bg-green-400 focus:outline-none" />
+          <button class="poppins-semibold">Submit</button>
         </form>
       </section>
       <section class="ad-section">
